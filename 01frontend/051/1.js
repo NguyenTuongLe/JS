@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	var nut =document.querySelector('.nut'),
 	    menutrai = document.querySelector('.menutrai'),
 	    den = document.querySelector('.den'),
+	    trang = document.querySelector('.mautrang'),
 	    khoito = document.querySelector('.noidungto');
 
 	    //khi click vao nut xanh 
@@ -11,11 +12,15 @@ document.addEventListener("DOMContentLoaded",function(){
 	    	den.classList.add('len');
 
 	    	//cho ca khoi to dichj sang phai
-	    	khoito.classList.add('dichphai');
+	    	// khoito.classList.add('dichphai');
+	    	trang.classList.add('trangquay');
+	    	menutrai.classList.remove('vetrai');
 	    }
 
 	    den.onclick=function(){
 	    	den.classList.remove('len');
 	    	khoito.classList.remove('dichphai');
+	    	trang.classList.remove('trangquay');
+	    	menutrai.classList.add('vetrai');
 	    }
 },false)
